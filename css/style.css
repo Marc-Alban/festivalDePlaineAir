@@ -48,6 +48,18 @@ h3 {
   color: #F2B237
 }
 
+.titlePage {
+  margin: 2em 0;
+  text-align: center;
+  text-decoration: underline;
+}
+
+hr {
+  border-top: 1px solid #121119;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 a {
   color: #FBFBFB;
   transition: all 0.2s;
@@ -58,17 +70,38 @@ a:hover {
   color: #FBFBFB;
 }
 
+form {
+  position: relative;
+  margin: 0px auto 50px auto;
+}
+
+.btn,
+.btn-primary {
+  background-color: rgb(242, 178, 55) !important;
+  border: none;
+  border-radius: 10px;
+  display: flex !important;
+  flex-direction: row-reverse !important;
+  position: absolute;
+  right: 20px;
+  bottom: -57px;
+}
+
+.hMain {
+  height: 80vh;
+}
+
+
 /*******************************************************************************************/
 /*******************************************************************************************/
 
 /* Navigation */
 #mainNav {
-  position: absolute;
-  top: 13px;
-  border-bottom: 1px solid #243563;
+  border-bottom: 1px solid #121119;
   background-color: #243563;
   font-family: 'Noto Sans', Arial, sans-serif;
 }
+
 
 #mainNav .navbar-brand {
   font-weight: 800;
@@ -176,10 +209,6 @@ footer .copyright {
 /* Responsive >= 992px */
 /* NAVIGATION */
 @media only screen and (min-width: 992px) {
-  #mainNav {
-    border-bottom: 1px solid transparent;
-    background: transparent;
-  }
 
   #mainNav .navbar-brand {
     padding: 10px 20px;
@@ -230,6 +259,10 @@ header.masthead .site-heading {
     font-size: 60px;
   }
 
+  form {
+    padding: 0px;
+  }
+
 }
 
 /* Responsive >=320px */
@@ -240,14 +273,7 @@ header.masthead .site-heading {
     height: 50px;
   }
 
-  #mainNav {
-    top: 3px;
-  }
-
-  hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 0;
-    border-top: 1px solid #fbfbfb;
+  form {
+    padding: 20px;
   }
 }
