@@ -19,7 +19,7 @@
     <body>
 
         <!-- Navigation -->
-        <nav class="mb-4 navbar navbar-expand-lg navbar-light"
+        <nav class="mb-4 navbar navbar-expand-lg navbar-light positionNav"
             id="mainNav">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img
@@ -54,38 +54,38 @@
             </div>
         </nav>
         <!-- Main Content -->
-        <main class="hMain">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="titlePage">Réservation</h2>
-                    </div>
+        <main class="overMain">
+            <div class="row">
+                <div class="col-md-6 maps">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11880.492291371422!2d12.4922309!3d41.8902102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28f1c82e908503c4!2sColosseo!5e0!3m2!1sit!2sit!4v1524815927977"
+                        frameborder="0" style="border:0"
+                        allowfullscreen></iframe>
                 </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <form class="form mx-auto">
-                        <label class="my-1 mr-2">Sélectionner
-                            un film</label>
-                        <select class="custom-select my-1 mr-sm-2">
-                            <option value="" selected>M le maudit (Fritz Lang)</option>
-                            <option value="">Carnival of souls de Herk Harvey
-                                (1962)</option>
-                            <option value="">Le Carnaval des âmes</option>
-                            <option value="">Les Morts-vivants</option>
-                        </select>
+                <div class="col-md-6 textPosition">
+                    <h2 class="titlePage">Nous Trouver</h2>
+                    <div class="text-white">
+                        <h2 class="mt-4
+                            font-weight-bold">Adresse</h2>
+                        <p>35 Boulevard de Courcelles <br>
+                            Parc Monceau, 75008 Paris</p>
+                    </div>
 
-                        <label>Nombre de place</label>
-                        <input type="text" class="form-control"
-                            placeholder="Nombre de place">
+                    <div class="text-white">
+                        <h2 class="mt-4
+                            font-weight-bold">Horaires</h2>
+                        <p>A partie de 18h</p>
+                    </div>
 
-                        <label>A quel nom est la réservation ? </label>
-                        <input type="text" class="form-control"
-                            placeholder="Nom...">
-
-                        <button type="submit" class="d-flex flex-row-reverse btn
-                            btn-primary my-1">Réserver</button>
-                    </form>
+                    <div class="text-white">
+                        <h2 class="mt-4
+                            font-weight-bold">Stationement</h2>
+                        <ul>
+                            <li>Parking Indigo Paris Wagram Courcelles</li>
+                            <li>Parking Indigo Paris Villiers</li>
+                            <li>Parking Indigo Paris Hoche</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </main>
