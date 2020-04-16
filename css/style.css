@@ -50,7 +50,7 @@ h3 {
 
 .titlePage {
   margin: 2em 0;
-  text-align: center;
+  text-align: left;
   text-decoration: underline;
 }
 
@@ -75,17 +75,7 @@ form {
   margin: 0px auto 50px auto;
 }
 
-.btn,
-.btn-primary {
-  background-color: rgb(242, 178, 55) !important;
-  border: none;
-  border-radius: 10px;
-  display: flex !important;
-  flex-direction: row-reverse !important;
-  position: absolute;
-  right: 20px;
-  bottom: -57px;
-}
+
 
 .hMain {
   height: 80vh;
@@ -148,6 +138,17 @@ header.masthead .site-heading .subheading {
   text-align: center;
 }
 
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box div {
+  width: 100%;
+  margin: auto;
+}
+
 /*******************************************************************************************/
 /*******************************************************************************************/
 /* Main --> Homme*/
@@ -155,11 +156,66 @@ img {
   width: 100%;
 }
 
-/* Programmation */
-.programImage {
-  width: 100%;
-  height: 100%;
+.how-section1 {
+  margin-top: -15%;
+  padding: 10%;
 }
+
+.how-section1 h4 {
+  color: #ffa500;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.how-section1 .subheading {
+  color: #fbfbfb;
+  font-size: 20px;
+}
+
+.how-section1 .row {
+  margin-top: 10%;
+}
+
+.how-img {
+  text-align: center;
+}
+
+.how-img img {
+  width: 70%;
+  height: auto;
+}
+
+/* News*/
+.block {
+  background: #121119;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 40px 10px 40px 0;
+  color: #fbfbfb;
+}
+
+/* Programmation */
+
+.card {
+  background-color: #121119 !important;
+  color: #fbfbfb !important;
+}
+
+.card-img-top {
+  height: 400px;
+}
+
+
+.lienFilm {
+  text-align: end;
+}
+
+.lienFilm .btn {
+  background-color: rgb(242, 178, 55) !important;
+  border: none;
+  border-radius: 10px;
+}
+
 
 /* Map -> Nous trouver */
 
@@ -204,11 +260,12 @@ footer .list-inline {
 }
 
 footer .copyright {
-  font-size: 14px;
   color: #FBFBFB !important;
-  margin-bottom: 0;
   text-align: center;
+  border-top: 1px solid #000;
+  padding-top: 20px;
 }
+
 
 
 
@@ -229,6 +286,14 @@ footer .copyright {
   font-size: 16px;
   padding: 25px 35px;
 }
+
+
+.footer-classic a,
+.footer-classic a:focus,
+.footer-classic a:active {
+  color: #ffffff;
+}
+
 
 
 /*******************************************************************************************/
@@ -287,9 +352,9 @@ header.masthead .overlay {
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
-  padding: 400px 0 150px;
   color: white;
 }
+
 
 /* Responsive >= 768px */
 @media only screen and (min-width: 768px) {
@@ -328,6 +393,17 @@ header.masthead .site-heading {
     height: 85vh;
   }
 
+}
+
+/* Responsive <=7680px */
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+
+  footer ul {
+    list-style: none;
+  }
 }
 
 /* Responsive >=320px */
