@@ -81,6 +81,9 @@ form {
   height: 80vh;
 }
 
+main {
+  padding: 50px 0;
+}
 
 
 /*******************************************************************************************/
@@ -91,6 +94,10 @@ form {
   border-bottom: 1px solid #121119;
   background-color: #243563;
   font-family: 'Noto Sans', Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
 }
 
 
@@ -185,6 +192,42 @@ img {
   height: auto;
 }
 
+/* Parallax */
+
+/**************************/
+#parallax-world-of-ugg h2 {
+  font-family: 'Berlin Sans FB', sans-serif;
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  z-index: 10;
+  opacity: .9;
+}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(../img/image-40.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+/* **** */
+
+
+
 /* News*/
 .block {
   padding: 10px;
@@ -242,6 +285,8 @@ iframe {
 .text-white ul li {
   list-style-type: none;
 }
+
+/*  */
 
 /*******************************************************************************************/
 /*******************************************************************************************/
@@ -398,6 +443,16 @@ header.masthead .site-heading {
 
 /* Responsive <=7680px */
 @media (max-width: 768px) {
+
+  #parallax-world-of-ugg h2 {
+    font-size: 30px;
+  }
+
+  #parallax-world-of-ugg .parallax-one {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   footer {
     text-align: center;
   }
@@ -405,6 +460,8 @@ header.masthead .site-heading {
   footer ul {
     list-style: none;
   }
+
+
 }
 
 /* Responsive >=320px */
