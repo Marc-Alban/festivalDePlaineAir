@@ -260,6 +260,45 @@ img {
   border-radius: 10px;
 }
 
+.vl {
+  border-left: 1px solid #fbfbfb;
+  height: 40px;
+  margin: 0 10px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #243563 !important;
+  border-bottom: 1px solid;
+  border-radius: 0;
+}
+
+/* Page film */
+.pageFilm .btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #f2b237;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid #FBFBFB;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.pageFilm .btn:hover {
+  color: #fbfbfb;
+  background-color: #f2b237;
+  border-color: #f2b237;
+}
 
 /* Map -> Nous trouver */
 
