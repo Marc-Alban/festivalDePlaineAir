@@ -260,16 +260,41 @@ img {
 
 /* *************** Test ************ */
 
-
 .card {
-  background-color: #121119;
-  color: #fbfbfb;
+  background-color: #fbfbfb;
+  color: #121119;
   height: 595px;
+  border: none !important;
+  box-shadow: 10px 10px 10px #121119 !important;
 }
 
 
+
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-weight: bold !important;
+  color: #121119;
+  text-transform: uppercase;
+}
+
+.custom-control-label {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top;
+  text-transform: uppercase;
+}
+
 .card-img-top {
   height: 400px;
+}
+
+.card .projectSub {
+  font-weight: bold !important;
+  color: #F2B237 !important;
 }
 
 
