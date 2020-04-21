@@ -381,6 +381,8 @@ img {
   background-color: #f2b237 !important;
 }
 
+
+
 /* Map -> Nous Contacter */
 
 .overMain {
@@ -533,11 +535,6 @@ header.masthead .site-heading {
     margin-bottom: 0px !important;
   }
 
-  iframe {
-    width: 100%;
-    height: 40vh;
-  }
-
   .textPosition {
     text-align: justify;
   }
@@ -548,6 +545,11 @@ header.masthead .site-heading {
 
   .overMain {
     height: 85vh;
+  }
+
+  iframe {
+    width: 530px;
+    height: 530px;
   }
 
 }
