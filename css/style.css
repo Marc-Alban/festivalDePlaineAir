@@ -1,591 +1,615 @@
 /*******************************************************************************************/
+
+
 /*******************************************************************************************/
 
 @font-face {
-  font-family: 'Berlin Sans FB';
-  font-style: normal;
-  font-weight: normal;
-  src: url('fonts/BRLNSR.woff') format('woff');
+    font-family: 'Berlin Sans FB';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/BRLNSR.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Berlin Sans FB Bold';
-  font-style: normal;
-  font-weight: normal;
-  src: url('fonts/BRLNSB.woff') format('woff');
+    font-family: 'Berlin Sans FB Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/BRLNSB.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Noto Sans';
-  font-style: normal;
-  src: url('fonts/noto-sans-v9-latin-regular.eot');
-  src:
-    url('fonts/noto-sans-v9-latin-regular.eot') format('embedded-opentype'),
-    url('fonts/noto-sans-v9-latin-regular.svg') format('svg');
+    font-family: 'Noto Sans';
+    font-style: normal;
+    src: url('fonts/noto-sans-v9-latin-regular.eot');
+    src: url('fonts/noto-sans-v9-latin-regular.eot') format('embedded-opentype'), url('fonts/noto-sans-v9-latin-regular.svg') format('svg');
 }
 
+
 /*******************************************************************************************/
+
+
 /*******************************************************************************************/
+
 
 /* Général */
+
 body {
-  font-size: 20px;
-  color: #FBFBFB;
-  background-color: #243563;
-  font-family: 'Noto Sans', 'Times New Roman', serif;
+    font-size: 20px;
+    color: #FBFBFB;
+    background-color: #243563;
+    font-family: 'Noto Sans', 'Times New Roman', serif;
 }
 
 p {
-  line-height: 1.5;
-  margin: 30px 0;
+    line-height: 1.5;
+    margin: 30px 0;
 }
 
-h1,
 h2,
 h3 {
-  font-weight: 700;
-  font-family: 'BRLNSR', 'BRLNSB', Arial, sans-serif;
-  color: #F2B237
+    font-weight: 700;
+    font-family: 'BRLNSR', 'BRLNSB', Arial, sans-serif;
+    color: #F2B237
 }
 
 .titlePage {
-  margin: 4em 0 0;
-  text-align: left;
-  text-decoration: underline;
+    margin: 4em 0 0;
+    text-align: left;
+    text-decoration: underline;
 }
 
 hr {
-  border-top: 1px solid #FBFBFB;
-  margin-top: 0px;
-  margin-bottom: 1rem;
+    border-top: 1px solid #FBFBFB;
+    margin-top: 0px;
+    margin-bottom: 1rem;
 }
 
 a {
-  color: rgb(242, 178, 55);
-  transition: all 0.2s;
+    color: rgb(242, 178, 55);
+    transition: all 0.2s;
 }
 
 a:focus,
 a:hover {
-  color: #FBFBFB;
+    color: #FBFBFB;
 }
 
 form {
-  position: relative;
+    position: relative;
 }
 
-
-
-
 main {
-  padding: 50px 0 0;
+    padding: 50px 0 0;
 }
 
 .btn {
-  text-transform: uppercase;
-  color: #FBFBFB;
-  font-weight: 400;
-  text-align: center;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: .25rem;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    text-transform: uppercase;
+    color: #FBFBFB;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 
 /*******************************************************************************************/
+
+
 /*******************************************************************************************/
+
 
 /* Navigation */
+
 #mainNav {
-  border-bottom: 1px solid #fbfbfb;
-  background-color: #243563;
-  font-family: 'Noto Sans', Arial, sans-serif;
-  position: fixed;
-  top: 0;
-  z-index: 5;
-  width: 100%;
+    border-bottom: 1px solid #fbfbfb;
+    background-color: #243563;
+    font-family: 'Noto Sans', Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
 }
 
-
 #mainNav .navbar-brand {
-  font-weight: 800;
-  color: #343a40;
+    font-weight: 800;
+    color: #343a40;
 }
 
 .navbar-light .navbar-toggler {
-  color: rgb(242, 178, 55);
-  border-color: rgb(242, 178, 55);
+    color: rgb(242, 178, 55);
+    border-color: rgb(242, 178, 55);
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #FBFBFB;
+    color: #FBFBFB;
 }
 
 #mainNav .navbar-nav>li.nav-item>a {
-  font-size: 15px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 20px;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
 }
 
-/*******************************************************************************************/
+
 /*******************************************************************************************/
 
+
+/*******************************************************************************************/
+
+
 /* Header */
+
 header.masthead .site-heading h1 {
-  font-size: 30px;
-  font-family: 'Berlin Sans FB', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-align: center;
+    font-family: 'Pacifico', 'Berlin Sans FB', 'Helvetica Neue', cursive, Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #F2B237 20%, #FBFBFB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #e4000000;
+    line-height: 85px;
+    text-align: center;
+    -webkit-filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.5));
 }
 
 header.masthead .page-heading .subheading,
 header.masthead .site-heading .subheading {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 1.1;
-  display: block;
-  margin: 10px 0 0;
-  font-family: 'Berlin Sans FB', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.1;
+    display: block;
+    margin: 10px 0 0;
+    font-family: 'Berlin Sans FB', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
 }
 
 .box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .box div {
-  width: 100%;
-  margin: auto;
+    width: 100%;
+    margin: auto;
 }
 
+
 /*******************************************************************************************/
+
+
 /*******************************************************************************************/
+
+
 /* Main --> Homme*/
+
 img {
-  width: 100%;
+    width: 100%;
 }
 
 .how-section1 {
-  margin-top: -15%;
-  padding: 10%;
+    margin-top: -15%;
+    padding: 10%;
 }
 
 .how-section1 h4 {
-  color: #ffa500;
-  font-weight: bold;
-  font-size: 30px;
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 .how-section1 .subheading {
-  color: #fbfbfb;
-  font-size: 20px;
+    color: #fbfbfb;
+    font-size: 20px;
 }
 
 .how-section1 .row {
-  margin-top: 10%;
+    margin-top: 10%;
 }
 
 .how-img {
-  text-align: center;
+    text-align: center;
 }
 
 .how-img img {
-  width: 70%;
-  height: auto;
+    width: 70%;
+    height: auto;
 }
+
 
 /* Parallax */
 
+
 /**************************/
+
 #parallax-world-of-ugg h2 {
-  font-family: 'Berlin Sans FB', sans-serif;
-  font-size: 40px;
-  letter-spacing: 10px;
-  text-align: center;
-  color: white;
-  font-weight: 400;
-  text-transform: uppercase;
-  z-index: 10;
-  opacity: .9;
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 40px;
+    letter-spacing: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: .9;
 }
 
+
 /* Section - Parallax */
+
+
 /**************************/
+
 #parallax-world-of-ugg .parallax-one {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  background-image: url(../img/image-40.jpeg);
-  background-attachment: fixed;
-  background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  border-top: 1px solid #fbfbfb;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(../img/image-40.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-top: 1px solid #fbfbfb;
 }
+
 
 /* **** */
 
 
-
 /* News*/
+
 .block {
-  padding: 10px;
-  margin: 40px 10px 40px 0;
-  color: #fbfbfb;
-  margin: 50px 0;
+    padding: 10px;
+    margin: 40px 10px 40px 0;
+    color: #fbfbfb;
+    margin: 50px 0;
 }
 
 .block:not(:last-child) {
-  border-bottom: 1px solid #fbfbfb;
+    border-bottom: 1px solid #fbfbfb;
 }
 
+
 /* Programmation */
+
 
 /* *************** Test ************ */
 
 .card {
-  background-color: #fbfbfb;
-  color: #121119;
-  height: 595px;
-  border: none !important;
-  box-shadow: 10px 10px 10px #121119 !important;
+    background-color: #fbfbfb;
+    color: #121119;
+    height: 595px;
+    border: none !important;
+    box-shadow: 10px 10px 10px #121119 !important;
 }
 
-
-
-
 .card-body {
-  text-align: center;
+    text-align: center;
 }
 
 .card-title {
-  font-weight: bold !important;
-  color: #121119;
-  text-transform: uppercase;
+    font-weight: bold !important;
+    color: #121119;
+    text-transform: uppercase;
 }
 
 .custom-control-label {
-  position: relative;
-  margin-bottom: 0;
-  vertical-align: top;
-  text-transform: uppercase;
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top;
+    text-transform: uppercase;
 }
 
 .card-img-top {
-  height: 400px;
+    height: 400px;
 }
 
 .card .projectSub {
-  font-weight: bold !important;
-  color: #F2B237 !important;
+    font-weight: bold !important;
+    color: #F2B237 !important;
 }
-
-
 
 .lienFilm .btn {
-  background-color: rgb(242, 178, 55) !important;
-  border: none;
-  border-radius: 10px;
-  transform: translate(-50%, -50%);
-  color: #fbfbfb;
+    background-color: rgb(242, 178, 55) !important;
+    border: none;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    color: #fbfbfb;
 }
-
 
 .card-container {
-  position: relative;
-
+    position: relative;
 }
 
-
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #121119;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transform: scale(0);
-  opacity: 0.9;
-  transition: .5s ease-in-out;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #121119;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transform: scale(0);
+    opacity: 0.9;
+    transition: .5s ease-in-out;
 }
 
 .card-container:hover .overlay {
-  height: 100%;
-  transform: scale(1);
+    height: 100%;
+    transform: scale(1);
 }
 
 .caption {
-  color: white;
-  font-size: 30px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
+
 /* ************* */
+
 .borderNav {
-  border-left: 1px solid #fbfbfb;
-  height: 40px;
-  margin: 0 10px;
+    border-left: 1px solid #fbfbfb;
+    height: 40px;
+    margin: 0 10px;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-  color: #fff;
-  background-color: #243563 !important;
-  border-bottom: 1px solid;
-  border-radius: 0;
+    color: #fff;
+    background-color: #243563 !important;
+    border-bottom: 1px solid;
+    border-radius: 0;
 }
 
+
 /* Page film */
+
 .pageFilm .btn {
-  display: inline-block;
-  font-weight: 400;
-  color: #fbfbfb;
-  text-align: center;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: #f2b237;
-  border: 1px solid #FBFBFB;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: .25rem;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    display: inline-block;
+    font-weight: 400;
+    color: #fbfbfb;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #f2b237;
+    border: 1px solid #FBFBFB;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .pageFilm .btn:hover {
-  color: #fbfbfb;
-  background-color: #f2b237 !important;
+    color: #fbfbfb;
+    background-color: #f2b237 !important;
 }
-
 
 
 /* Map -> Nous Contacter */
 
 .overMain {
-  overflow: hidden;
+    overflow: hidden;
 }
-
 
 .contactSection iframe {
-  width: 100%;
-  height: 300px;
-  border: 0;
+    width: 100%;
+    height: 300px;
+    border: 0;
 }
 
+
 /* text -> Nous trouver */
+
 .textPosition {
-  padding: 10px 30px;
-  text-align: center;
+    padding: 10px 30px;
+    text-align: center;
 }
 
 .text-white ul li {
-  list-style-type: none;
+    list-style-type: none;
 }
+
 
 /*  */
 
+
 /*******************************************************************************************/
+
+
 /*******************************************************************************************/
+
+
 /* Footer */
+
 footer {
-  padding: 0 0 15px;
+    padding: 0 0 15px;
 }
 
 footer p {
-  margin: 0px auto;
+    margin: 0px auto;
 }
 
 footer .list-inline {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 footer .copyright {
-  color: #FBFBFB !important;
-  text-align: center;
-  padding-top: 20px;
+    color: #FBFBFB !important;
+    text-align: center;
+    padding-top: 20px;
 }
 
-
-
-
 .btn-primary {
-  background-color: #f2b237;
-  border-color: initial;
+    background-color: #f2b237;
+    border-color: initial;
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  color: #fff;
-  background-color: #f2b237 !important;
+    color: #fff;
+    background-color: #f2b237 !important;
 }
 
 .btn-lg {
-  font-size: 16px;
-  padding: 25px 35px;
+    font-size: 16px;
+    padding: 25px 35px;
 }
-
 
 .footer-classic a,
 .footer-classic a:focus,
 .footer-classic a:active {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 
+/*******************************************************************************************/
+
 
 /*******************************************************************************************/
-/*******************************************************************************************/
+
 
 /* Responsive >= 992px */
+
+
 /* NAVIGATION */
+
 @media only screen and (min-width: 992px) {
-
-  #mainNav .navbar-brand {
-    padding: 10px 20px;
-    color: #fff;
-  }
-
-
-  #mainNav .navbar-nav>li.nav-item>a {
-    padding: 10px 20px;
-    color: #fff;
-  }
-
-  .centerImage {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .programmationImage {
-    width: 100%;
-    height: 500px;
-  }
-
-
+    #mainNav .navbar-brand {
+        padding: 10px 20px;
+        color: #fff;
+    }
+    #mainNav .navbar-nav>li.nav-item>a {
+        padding: 10px 20px;
+        color: #fff;
+    }
+    .centerImage {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .programmationImage {
+        width: 100%;
+        height: 500px;
+    }
 }
 
+
 /* SLIDER */
+
 header.masthead {
-  margin-bottom: 50px;
-  background: no-repeat center center;
-  border-bottom: 1px solid #fbfbfb;
-  background-attachment: scroll;
-  position: relative;
-  background-size: cover;
-  height: 100vh;
+    margin-bottom: 50px;
+    background: no-repeat center center;
+    border-bottom: 1px solid #fbfbfb;
+    background-attachment: scroll;
+    position: relative;
+    background-size: cover;
+    height: 100vh;
 }
 
 header.masthead .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #121119;
-  opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #121119;
+    opacity: 0.5;
 }
 
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
-  color: white;
+    color: white;
+    -webkit-box-shadow: 12px 7px 35px 2px rgba(0, 0, 0, 0.88);
+    -moz-box-shadow: 12px 7px 35px 2px rgba(0, 0, 0, 0.88);
+    box-shadow: 12px 7px 35px 2px rgba(0, 0, 0, 0.88);
+    background-color: #00000099;
 }
 
 
 /* Responsive >= 768px */
+
 @media only screen and (min-width: 768px) {
-
-  header.masthead .page-heading h1,
-  header.masthead .site-heading h1 {
-    font-size: 60px;
-  }
-
-  form {
-    padding: 0px;
-  }
-
-  .positionNav {
-    margin-bottom: 0px !important;
-  }
-
-  .textPosition {
-    text-align: justify;
-  }
-
-  .text-white ul {
-    padding: 0;
-  }
-
-  .overMain {
-    height: 85vh;
-  }
-
-  iframe {
-    width: 530px;
-    height: 530px;
-  }
-
+    header.masthead .page-heading h1,
+    header.masthead .site-heading h1 {
+        font-size: 60px;
+    }
+    form {
+        padding: 0px;
+    }
+    .positionNav {
+        margin-bottom: 0px !important;
+    }
+    .textPosition {
+        text-align: justify;
+    }
+    .text-white ul {
+        padding: 0;
+    }
+    .overMain {
+        height: 85vh;
+    }
+    iframe {
+        width: 530px;
+        height: 530px;
+    }
 }
+
 
 /* Responsive <=7680px */
+
 @media (max-width: 768px) {
-
-  #parallax-world-of-ugg h2 {
-    font-size: 30px;
-  }
-
-  #parallax-world-of-ugg .parallax-one {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-  footer {
-    text-align: center;
-  }
-
-  footer ul {
-    list-style: none;
-  }
-
-
+    #parallax-world-of-ugg h2 {
+        font-size: 30px;
+    }
+    #parallax-world-of-ugg .parallax-one {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    footer {
+        text-align: center;
+    }
+    footer ul {
+        list-style: none;
+    }
 }
 
+
 /* Responsive >=320px */
+
 @media only screen and (min-width: 320px) {
-
-  #mainNav .navbar-brand img {
-    width: 100px;
-    height: 50px;
-  }
-
-  form {
-    padding: 20px;
-  }
+    #mainNav .navbar-brand img {
+        width: 100px;
+        height: 50px;
+    }
+    form {
+        padding: 20px;
+    }
 }
