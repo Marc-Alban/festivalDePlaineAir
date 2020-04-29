@@ -175,11 +175,12 @@ header.masthead .site-heading .subheading {
     text-align: center;
 }
 
-.reservationBtn a button {
+.reservationBtn {
+    width: 15rem !important;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 1em;
+    justify-content: center;
+    margin: 2em auto !important;
 }
 
 .box {
